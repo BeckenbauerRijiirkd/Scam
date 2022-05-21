@@ -4,8 +4,14 @@ import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'imc_result.dart';
 import 'rec_pass.dart';
 
-final TextEditingController _controladorAltura = TextEditingController();
+//peso, altura, triceps, biceps, subscapular e supraciliaca
+
 final TextEditingController _controladorPeso = TextEditingController();
+final TextEditingController _controladorAltura = TextEditingController();
+final TextEditingController _controladorTriceps = TextEditingController();
+final TextEditingController _controladorBiceps = TextEditingController();
+final TextEditingController _controladorSe = TextEditingController();
+final TextEditingController _controladorSi = TextEditingController();
 
 class Imc_Page extends StatelessWidget {
   @override
@@ -49,6 +55,62 @@ class Imc_Page extends StatelessWidget {
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     labelText: "Peso",
+                    labelStyle: TextStyle(
+                      color: Colors.black38,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 20,
+                    ),
+                  ),
+                  style: TextStyle(fontSize: 20),
+                ),
+                TextFormField(
+                  controller: _controladorPeso,
+                  // autofocus: true,
+                  keyboardType: TextInputType.number,
+                  decoration: InputDecoration(
+                    labelText: "Triceps",
+                    labelStyle: TextStyle(
+                      color: Colors.black38,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 20,
+                    ),
+                  ),
+                  style: TextStyle(fontSize: 20),
+                ),
+                TextFormField(
+                  controller: _controladorPeso,
+                  // autofocus: true,
+                  keyboardType: TextInputType.number,
+                  decoration: InputDecoration(
+                    labelText: "Biceps",
+                    labelStyle: TextStyle(
+                      color: Colors.black38,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 20,
+                    ),
+                  ),
+                  style: TextStyle(fontSize: 20),
+                ),
+                TextFormField(
+                  controller: _controladorPeso,
+                  // autofocus: true,
+                  keyboardType: TextInputType.number,
+                  decoration: InputDecoration(
+                    labelText: "Se",
+                    labelStyle: TextStyle(
+                      color: Colors.black38,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 20,
+                    ),
+                  ),
+                  style: TextStyle(fontSize: 20),
+                ),
+                TextFormField(
+                  controller: _controladorPeso,
+                  // autofocus: true,
+                  keyboardType: TextInputType.number,
+                  decoration: InputDecoration(
+                    labelText: "Si",
                     labelStyle: TextStyle(
                       color: Colors.black38,
                       fontWeight: FontWeight.w400,
