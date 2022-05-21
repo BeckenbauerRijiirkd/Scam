@@ -9,8 +9,7 @@ class Home extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(),
         body: Container(
-            padding: EdgeInsets.only(top: 100, left: 40, right: 40, bottom: 100),
-            margin: EdgeInsets.only(bottom: 60),
+            padding: EdgeInsets.only(top: 60, left: 40, right: 40),
             color: Colors.white,
             child: ListView(
               children: <Widget>[
@@ -21,7 +20,7 @@ class Home extends StatelessWidget {
                 ),
                 Container(
                   height: 60,
-                  margin: EdgeInsets.all(10),
+                  margin: EdgeInsets.only(top: 40, bottom: 10),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
