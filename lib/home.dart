@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(),
         body: Container(
-            padding: EdgeInsets.only(top: 60, left: 40, right: 40, bottom: 60),
+            padding: EdgeInsets.only(top: 100, left: 40, right: 40, bottom: 100),
             color: Colors.white,
             child: ListView(
               children: <Widget>[
