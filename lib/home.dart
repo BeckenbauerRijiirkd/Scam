@@ -87,7 +87,7 @@ class Home extends StatelessWidget {
                     children: <Widget>[
                       FlatButton(
                         child: Text(
-                          "IMC",
+                          "COMPOSIÇÃO COMRPORAL",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
