@@ -56,20 +56,6 @@ class Home extends StatelessWidget {
                           Navigator.of(context).push(MaterialPageRoute(builder: (context) => Imc_Page()));
                         },
                       ),
-                      FlatButton(
-                        child: Text(
-                          "IMC",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                            fontSize: 20,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                        onPressed: () {
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Imc_Page()));
-                        },
-                      ),
                     ],
                   ),
                 ),
@@ -97,20 +83,6 @@ class Home extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      FlatButton(
-                        child: Text(
-                          "IMC",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                            fontSize: 20,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                        onPressed: () {
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Imc_Page()));
-                        },
-                      ),
                       FlatButton(
                         child: Text(
                           "IMC",
