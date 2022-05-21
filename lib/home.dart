@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 import 'imc_page.dart';
+import 'comp_corporal.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -96,7 +97,7 @@ class Home extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                         onPressed: () {
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Imc_Page()));
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Comp_Corporal()));
                         },
                       ),
                     ],

@@ -13,7 +13,7 @@ final TextEditingController _controladorBiceps = TextEditingController();
 final TextEditingController _controladorSe = TextEditingController();
 final TextEditingController _controladorSi = TextEditingController();
 
-class Imc_Page extends StatelessWidget {
+class Comp_Corporal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
