@@ -10,6 +10,7 @@ class Home extends StatelessWidget {
         appBar: AppBar(),
         body: Container(
             padding: EdgeInsets.only(top: 100, left: 40, right: 40, bottom: 100),
+            margin: EdgeInsets.only(bottom: 60),
             color: Colors.white,
             child: ListView(
               children: <Widget>[
