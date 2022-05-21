@@ -3,6 +3,8 @@ import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 import 'imc_page.dart';
 import 'login_page.dart';
+import 'home.dart';
+
 import 'rec_pass.dart';
 
 void main() => runApp(MyApp());
