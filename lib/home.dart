@@ -20,7 +20,7 @@ class Home extends StatelessWidget {
                 ),
                 Container(
                   height: 60,
-                  margin: EdgeInsets.only(top: 40, bottom: 10),
+                  margin: EdgeInsets.all(10),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
