@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
-import 'home_page.dart';
+import 'imc_page.dart';
+import 'home.dart';
 import 'rec_pass.dart';
 
 class Login extends StatelessWidget {
