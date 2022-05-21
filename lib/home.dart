@@ -20,7 +20,7 @@ class Home extends StatelessWidget {
                 ),
                 Container(
                   height: 60,
-                  padding: new EdgeInsets.all(10.0),
+                  margin: EdgeInsets.all(10),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
@@ -62,6 +62,7 @@ class Home extends StatelessWidget {
                 ),
                 Container(
                   height: 60,
+                  margin: EdgeInsets.all(10),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
