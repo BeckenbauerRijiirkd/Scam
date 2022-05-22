@@ -13,6 +13,13 @@ final TextEditingController _controladorBiceps = TextEditingController();
 final TextEditingController _controladorSe = TextEditingController();
 final TextEditingController _controladorSi = TextEditingController();
 
+enum SingingCharacter { lafayette, jefferson }
+SingingCharacter? _character = SingingCharacter.lafayette;
+
+bool _value = false;
+int val = -1;
+var setState;
+
 class Comp_Corporal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -23,6 +30,30 @@ class Comp_Corporal extends StatelessWidget {
             color: Colors.white,
             child: ListView(
               children: <Widget>[
+                ListTile(
+                  title: const Text('Lafayette'),
+                  leading: Radio<SingingCharacter>(
+                    value: SingingCharacter.lafayette,
+                    groupValue: _character,
+                    onChanged: (SingingCharacter? value) {
+                      setState(() {
+                        _character = value;
+                      });
+                    },
+                  ),
+                ),
+                ListTile(
+                  title: const Text('Thomas Jefferson'),
+                  leading: Radio<SingingCharacter>(
+                    value: SingingCharacter.jefferson,
+                    groupValue: _character,
+                    onChanged: (SingingCharacter? value) {
+                      setState(() {
+                        _character = value;
+                      });
+                    },
+                  ),
+                ),
                 SizedBox(
                   width: 128,
                   height: 128,
@@ -157,6 +188,10 @@ class Comp_Corporal extends StatelessWidget {
                           double altura = double.tryParse(_controladorAltura.text)!;
 
                           double peso = double.tryParse(_controladorPeso.text)!;
+                          double biceps = double.tryParse(_controladorBiceps.text)!;
+                          double triceps = double.tryParse(_controladorTriceps.text)!;
+                          double se = double.tryParse(_controladorSe.text)!;
+                          double si = double.tryParse(_controladorSi.text)!;
 
                           double imc = (peso) / (altura * altura);
 
