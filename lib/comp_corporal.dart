@@ -18,7 +18,6 @@ SingingCharacter? _character = SingingCharacter.lafayette;
 
 bool _value = false;
 int val = -1;
-var setState;
 
 class Comp_Corporal extends StatelessWidget {
   @override
