@@ -19,11 +19,11 @@ SingingCharacter? _character = SingingCharacter.lafayette;
 bool _value = false;
 int val = -1;
 
-class MainPage extends StatefulWidget {
+class Comp_Corporal_Page extends StatefulWidget {
   Comp_Corporal createState() => Comp_Corporal();
 }
 
-class Comp_Corporal extends State<MainPage> {
+class Comp_Corporal extends State<Comp_Corporal_Page> {
   //Your code here
   @override
   Widget build(BuildContext context) {

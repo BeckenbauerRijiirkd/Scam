@@ -97,7 +97,7 @@ class Home extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                         onPressed: () {
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Comp_Corporal()));
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Comp_Corporal_Page()));
                         },
                       ),
                     ],
