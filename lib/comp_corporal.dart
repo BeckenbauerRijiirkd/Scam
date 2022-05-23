@@ -13,7 +13,7 @@ final TextEditingController _controladorBiceps = TextEditingController();
 final TextEditingController _controladorSe = TextEditingController();
 final TextEditingController _controladorSi = TextEditingController();
 
-enum SingingCharacter { lafayette, jefferson }
+enum SingingCharacter { m, f }
 SingingCharacter? _character = SingingCharacter.lafayette;
 
 bool _value = false;
@@ -43,9 +43,9 @@ class Comp_Corporal extends State<Comp_Corporal_Page> {
                   height: 20,
                 ),
                 ListTile(
-                  title: const Text('Lafayette'),
+                  title: const Text('Masculino'),
                   leading: Radio<SingingCharacter>(
-                    value: SingingCharacter.lafayette,
+                    value: SingingCharacter.m,
                     groupValue: _character,
                     onChanged: (SingingCharacter? value) {
                       setState(() {
@@ -55,9 +55,9 @@ class Comp_Corporal extends State<Comp_Corporal_Page> {
                   ),
                 ),
                 ListTile(
-                  title: const Text('Thomas Jefferson'),
+                  title: const Text('Feminino'),
                   leading: Radio<SingingCharacter>(
-                    value: SingingCharacter.jefferson,
+                    value: SingingCharacter.f,
                     groupValue: _character,
                     onChanged: (SingingCharacter? value) {
                       setState(() {
