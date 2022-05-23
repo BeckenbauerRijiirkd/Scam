@@ -81,7 +81,7 @@ class Comp_Corp_Result extends StatelessWidget {
                     children: <Widget>[
                       Container(
                           child: Text(
-                        percentualGordura(comp).toString(),
+                        percentualGordura(comp).toStringAsFixed(2),
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
@@ -119,7 +119,7 @@ class Comp_Corp_Result extends StatelessWidget {
                     children: <Widget>[
                       Container(
                           child: Text(
-                        pesoGordura(comp.peso, percentualGordura(comp)).toString(),
+                        pesoGordura(comp.peso, percentualGordura(comp)).toStringAsFixed(2),
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
@@ -130,7 +130,7 @@ class Comp_Corp_Result extends StatelessWidget {
                     ],
                   ),
                 ),
-                Container(child: Text("Peso Gordura")),
+                Container(child: Text("Peso Massa Magra")),
                 Container(
                   height: 60,
                   alignment: Alignment.center,
@@ -157,7 +157,7 @@ class Comp_Corp_Result extends StatelessWidget {
                     children: <Widget>[
                       Container(
                           child: Text(
-                        pesoMassaMagra(comp.peso, pesoGordura(comp.peso, percentualGordura(comp))).toString(),
+                        pesoMassaMagra(comp.peso, pesoGordura(comp.peso, percentualGordura(comp))).toStringAsFixed(2),
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
