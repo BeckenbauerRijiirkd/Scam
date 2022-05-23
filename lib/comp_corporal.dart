@@ -1,6 +1,8 @@
+import 'package:com/comp_corp_result.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
+import 'composicao_corporal.dart';
 import 'imc_result.dart';
 import 'rec_pass.dart';
 
@@ -198,11 +200,9 @@ class Comp_Corporal extends State<Comp_Corporal_Page> {
                           double se = double.tryParse(_controladorSe.text)!;
                           double si = double.tryParse(_controladorSi.text)!;
 
-                          double imc = (peso) / (altura * altura);
+                          Composicao_Corporal comp = Composicao_Corporal(altura, peso, biceps, triceps, se, si, _character!.index);
 
-                          print(imc);
-
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Imc(imc)));
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Comp_Corp_Result(comp)));
                         },
                       ),
                     ],
