@@ -180,7 +180,7 @@ class Comp_Corporal extends State<Comp_Corporal_Page> {
                     children: <Widget>[
                       FlatButton(
                         child: Text(
-                          "IMC",
+                          "Culcular",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
@@ -189,6 +189,7 @@ class Comp_Corporal extends State<Comp_Corporal_Page> {
                           textAlign: TextAlign.center,
                         ),
                         onPressed: () {
+                          print(_character);
                           double altura = double.tryParse(_controladorAltura.text)!;
 
                           double peso = double.tryParse(_controladorPeso.text)!;
