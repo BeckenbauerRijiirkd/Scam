@@ -99,7 +99,7 @@ class Comp_Corporal extends State<Comp_Corporal_Page> {
                   style: TextStyle(fontSize: 20),
                 ),
                 TextFormField(
-                  controller: _controladorPeso,
+                  controller: _controladorTriceps,
                   // autofocus: true,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
@@ -113,7 +113,7 @@ class Comp_Corporal extends State<Comp_Corporal_Page> {
                   style: TextStyle(fontSize: 20),
                 ),
                 TextFormField(
-                  controller: _controladorPeso,
+                  controller: _controladorBiceps,
                   // autofocus: true,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
@@ -127,7 +127,7 @@ class Comp_Corporal extends State<Comp_Corporal_Page> {
                   style: TextStyle(fontSize: 20),
                 ),
                 TextFormField(
-                  controller: _controladorPeso,
+                  controller: _controladorSe,
                   // autofocus: true,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
@@ -141,7 +141,7 @@ class Comp_Corporal extends State<Comp_Corporal_Page> {
                   style: TextStyle(fontSize: 20),
                 ),
                 TextFormField(
-                  controller: _controladorPeso,
+                  controller: _controladorSi,
                   // autofocus: true,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
@@ -189,7 +189,7 @@ class Comp_Corporal extends State<Comp_Corporal_Page> {
                           textAlign: TextAlign.center,
                         ),
                         onPressed: () {
-                          print(_character);
+                          print(_character.toString());
                           double altura = double.tryParse(_controladorAltura.text)!;
 
                           double peso = double.tryParse(_controladorPeso.text)!;
