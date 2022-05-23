@@ -12,6 +12,11 @@ class Comp_Corp_Result extends StatelessWidget {
 
   double percentualGordura(Composicao_Corporal comp) {
     double percentualGordura = 0.0;
+    //DI
+    //1,1620 – 0,0630 Log10 (TR + BI + SE + SI)
+    //
+    //pg
+    //[(4,95 / Densidade corporal) – 4,50] x 100
 
     if (comp.genero == 0) {
       //Masculino
