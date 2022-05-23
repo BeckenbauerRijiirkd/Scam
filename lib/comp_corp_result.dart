@@ -83,17 +83,7 @@ class Comp_Corp_Result extends StatelessWidget {
                           fontSize: 20,
                         ),
                         textAlign: TextAlign.center,
-                      )),
-                      Container(
-                          child: Text(
-                        percentualGordura(comp).toString(),
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                        textAlign: TextAlign.center,
-                      )),
+                      ))
                     ],
                   ),
                 ),
