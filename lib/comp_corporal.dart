@@ -34,6 +34,14 @@ class Comp_Corporal extends State<Comp_Corporal_Page> {
             color: Colors.white,
             child: ListView(
               children: <Widget>[
+                SizedBox(
+                  width: 128,
+                  height: 128,
+                  child: Image.asset('assets/images/flutter_ico.png'),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
                 ListTile(
                   title: const Text('Lafayette'),
                   leading: Radio<SingingCharacter>(
@@ -57,14 +65,6 @@ class Comp_Corporal extends State<Comp_Corporal_Page> {
                       });
                     },
                   ),
-                ),
-                SizedBox(
-                  width: 128,
-                  height: 128,
-                  child: Image.asset('assets/images/flutter_ico.png'),
-                ),
-                SizedBox(
-                  height: 20,
                 ),
                 TextFormField(
                   // autofocus: true,
