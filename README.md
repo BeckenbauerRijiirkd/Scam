@@ -1,4 +1,4 @@
-# teste
+# SCAM
 
 A new Flutter project.
 
