@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
@@ -8,16 +10,26 @@ class Comp_Corp_Result extends StatelessWidget {
 
   Comp_Corp_Result(this.comp);
 
-  double comp_Corp_Calc(Composicao_Corporal comp) {
-//     Homens de 17 a 72 anos:
-// percentualGordura = (4,95 / (1,1765 – 0,0744 Log10 (TR + BI + SE + SI))) - 4,50) x 100
+  double percentualGordura(Composicao_Corporal comp) {
+    double percentualGordura = 0.0;
 
-// Mulheres de 17 a 72 anos:
-// percentualGordura = (4,95 / (1,1567 – 0,0717 Log10 (TR + BI + SE + SI))) - 4,50) x 100
+    if (comp.genero == 0) {
+      //Masculino
+      percentualGordura = (4.95 / (1.1765 - 0.0744 * log(10) * (comp.triceps + comp.biceps + comp.se + comp.si)) - 4.50) * 100;
+    } else {
+      //Feminino
+      percentualGordura = (4.95 / (1.1567 - 0.0717 * log(10) * (comp.triceps + comp.biceps + comp.se + comp.si)) - 4.50) * 100;
+    }
 
-    // double percentualGordura = (4.95 / (1.1765 - 0.0744 log() (comp.triceps + comp.biceps + comp.se + comp.si))) - 4.50) * 100;
+    return percentualGordura;
+  }
 
-    return 0.0;
+  double pesoGordura(double peso, double percentualGordura) {
+    return (peso * percentualGordura) / 100;
+  }
+
+  double pesoMassaMagra(double peso, double pesoGordura) {
+    return (peso - pesoGordura);
   }
 
   @override
@@ -63,7 +75,7 @@ class Comp_Corp_Result extends StatelessWidget {
                     children: <Widget>[
                       Container(
                           child: Text(
-                        this.comp.altura.toString(),
+                        percentualGordura(comp).toString(),
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
