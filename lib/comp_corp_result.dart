@@ -8,6 +8,18 @@ class Comp_Corp_Result extends StatelessWidget {
 
   Comp_Corp_Result(this.comp);
 
+  double comp_Corp_Calc(Composicao_Corporal comp) {
+//     Homens de 17 a 72 anos:
+// percentualGordura = (4,95 / (1,1765 – 0,0744 Log10 (TR + BI + SE + SI))) - 4,50) x 100
+
+// Mulheres de 17 a 72 anos:
+// percentualGordura = (4,95 / (1,1567 – 0,0717 Log10 (TR + BI + SE + SI))) - 4,50) x 100
+
+    // double percentualGordura = (4.95 / (1.1765 - 0.0744 log() (comp.triceps + comp.biceps + comp.se + comp.si))) - 4.50) * 100;
+
+    return 0.0;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +63,7 @@ class Comp_Corp_Result extends StatelessWidget {
                     children: <Widget>[
                       Container(
                           child: Text(
-                        this.comp.toString(),
+                        this.comp.altura.toString(),
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
