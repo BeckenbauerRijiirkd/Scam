@@ -14,7 +14,7 @@ final TextEditingController _controladorSe = TextEditingController();
 final TextEditingController _controladorSi = TextEditingController();
 
 enum SingingCharacter { m, f }
-SingingCharacter? _character = SingingCharacter.lafayette;
+SingingCharacter? _character = SingingCharacter.m;
 
 bool _value = false;
 int val = -1;
