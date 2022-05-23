@@ -49,6 +49,7 @@ class Comp_Corp_Result extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
+                Container(child: Text("Composição Corporal")),
                 Container(
                   height: 60,
                   alignment: Alignment.center,
@@ -73,6 +74,16 @@ class Comp_Corp_Result extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
+                      Container(
+                          child: Text(
+                        percentualGordura(comp).toString(),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.center,
+                      )),
                       Container(
                           child: Text(
                         percentualGordura(comp).toString(),
