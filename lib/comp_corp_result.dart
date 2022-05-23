@@ -92,6 +92,82 @@ class Comp_Corp_Result extends StatelessWidget {
                     ],
                   ),
                 ),
+                Container(child: Text("Peso Gordura")),
+                Container(
+                  height: 60,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      stops: [
+                        0.3,
+                        1
+                      ],
+                      colors: [
+                        Color(0xFF2494F5),
+                        Color(0xFF095A9D),
+                      ],
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(5),
+                    ),
+                  ),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                          child: Text(
+                        pesoGordura(comp.peso, percentualGordura(comp)).toString(),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.center,
+                      ))
+                    ],
+                  ),
+                ),
+                Container(child: Text("Peso Gordura")),
+                Container(
+                  height: 60,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      stops: [
+                        0.3,
+                        1
+                      ],
+                      colors: [
+                        Color(0xFF2494F5),
+                        Color(0xFF095A9D),
+                      ],
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(5),
+                    ),
+                  ),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                          child: Text(
+                        pesoMassaMagra(comp.peso, pesoGordura(comp.peso, percentualGordura(comp))).toString(),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.center,
+                      ))
+                    ],
+                  ),
+                )
               ],
             )));
   }
