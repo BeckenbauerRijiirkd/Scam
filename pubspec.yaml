@@ -1,4 +1,4 @@
-name: com
+name: scam.com
 description: A new Flutter project.
 
 # The following defines the version and build number for your application.
@@ -19,6 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  provider: ^5.0.0
   flutter_signin_button: ^2.0.0
   firebase_core: ^1.17.0
   firebase_auth: ^3.3.18
