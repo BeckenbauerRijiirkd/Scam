@@ -16,15 +16,15 @@ class Imc extends StatelessWidget {
       result = "Peso Normal";
       return result;
     }
-    if (imc >= 25.0 && imc <= 29.9) {
+    if (imc >= 25.0 && imc < 30.0) {
       result = "Sobrepeso";
       return result;
     }
-    if (imc >= 30.0 && imc <= 34.9) {
+    if (imc >= 30.0 && imc < 35.0) {
       result = "Obesidade (Grau I)";
       return result;
     }
-    if (imc >= 35.0 && imc <= 39.9) {
+    if (imc >= 35.0 && imc < 40.0) {
       result = "Obesidade Severa (Grau II)";
       return result;
     }
@@ -57,18 +57,7 @@ class Imc extends StatelessWidget {
                   height: 60,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      stops: [
-                        0.3,
-                        1
-                      ],
-                      colors: [
-                        Color(0xFF2494F5),
-                        Color(0xFF095A9D),
-                      ],
-                    ),
+                    color: Colors.blue,
                     borderRadius: BorderRadius.all(
                       Radius.circular(5),
                     ),

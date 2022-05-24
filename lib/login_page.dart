@@ -81,6 +81,12 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 Padding(
+                    padding: EdgeInsets.only(top: 100),
+                    child: Form(
+                      key: formKey,
+                      child: Image.asset('assets/images/flutter_ico.png'),
+                    )),
+                Padding(
                   padding: EdgeInsets.all(24),
                   child: TextFormField(
                     controller: email,
