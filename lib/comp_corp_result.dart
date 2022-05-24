@@ -59,18 +59,7 @@ class Comp_Corp_Result extends StatelessWidget {
                   height: 60,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      stops: [
-                        0.3,
-                        1
-                      ],
-                      colors: [
-                        Color(0xFF2494F5),
-                        Color(0xFF095A9D),
-                      ],
-                    ),
+                    color: Colors.blue,
                     borderRadius: BorderRadius.all(
                       Radius.circular(5),
                     ),
@@ -97,18 +86,7 @@ class Comp_Corp_Result extends StatelessWidget {
                   height: 60,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      stops: [
-                        0.3,
-                        1
-                      ],
-                      colors: [
-                        Color(0xFF2494F5),
-                        Color(0xFF095A9D),
-                      ],
-                    ),
+                    color: Colors.blue,
                     borderRadius: BorderRadius.all(
                       Radius.circular(5),
                     ),
@@ -135,18 +113,7 @@ class Comp_Corp_Result extends StatelessWidget {
                   height: 60,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      stops: [
-                        0.3,
-                        1
-                      ],
-                      colors: [
-                        Color(0xFF2494F5),
-                        Color(0xFF095A9D),
-                      ],
-                    ),
+                    color: Colors.blue,
                     borderRadius: BorderRadius.all(
                       Radius.circular(5),
                     ),
