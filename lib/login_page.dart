@@ -72,10 +72,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Padding(
-                  padding: EdgeInsets.only(top: 100),
-                  child: Image.asset('assets/images/flutter_ico.png'),
-                ),
+                Image.asset('assets/images/flutter_ico.png'),
                 Text(
                   titulo,
                   style: TextStyle(
