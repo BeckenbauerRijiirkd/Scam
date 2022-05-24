@@ -69,7 +69,7 @@ class Rec_Pass extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                     onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => Login()));
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginPage()));
                     },
                   ),
                 ],

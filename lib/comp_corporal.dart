@@ -1,4 +1,4 @@
-import 'package:com/comp_corp_result.dart';
+import 'package:scam.com/comp_corp_result.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
