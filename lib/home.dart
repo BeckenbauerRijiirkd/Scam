@@ -27,6 +27,7 @@ class Home extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
+                    color: Colors.blue,
                     borderRadius: BorderRadius.all(
                       Radius.circular(5),
                     ),
@@ -57,18 +58,7 @@ class Home extends StatelessWidget {
                     margin: EdgeInsets.all(10),
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        stops: [
-                          0.3,
-                          1
-                        ],
-                        colors: [
-                          Color(0xFF2494F5),
-                          Color(0xFF095A9D),
-                        ],
-                      ),
+                      color: Colors.blue,
                       borderRadius: BorderRadius.all(
                         Radius.circular(5),
                       ),
