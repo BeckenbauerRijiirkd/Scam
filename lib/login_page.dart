@@ -72,6 +72,12 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Padding(
+                    padding: EdgeInsets.only(top: 100),
+                    child: Form(
+                      key: formKey,
+                      child: Image.asset('assets/images/flutter_ico.png'),
+                    )),
                 Text(
                   titulo,
                   style: TextStyle(
@@ -80,12 +86,6 @@ class _LoginPageState extends State<LoginPage> {
                     letterSpacing: -1.5,
                   ),
                 ),
-                Padding(
-                    padding: EdgeInsets.only(top: 100),
-                    child: Form(
-                      key: formKey,
-                      child: Image.asset('assets/images/flutter_ico.png'),
-                    )),
                 Padding(
                   padding: EdgeInsets.all(24),
                   child: TextFormField(
