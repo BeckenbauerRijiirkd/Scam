@@ -20,10 +20,10 @@ class Comp_Corp_Result extends StatelessWidget {
 
     if (comp.genero == 0) {
       //Masculino
-      percentualGordura = (4.95 / (1.1765 - 0.0744 * log(10) * ((comp.triceps / 1000) + (comp.biceps / 1000) + (comp.se / 1000) + (comp.si / 1000))) - 4.50) * 100;
+      percentualGordura = (4.95 / (1.1765 - 0.0744 * log(10) * ((comp.triceps) + (comp.biceps) + (comp.se) + (comp.si))) - 4.50) * 100;
     } else {
       //Feminino
-      percentualGordura = (4.95 / (1.1567 - 0.0717 * log(10) * ((comp.triceps / 1000) + (comp.biceps / 1000) + (comp.se / 1000) + (comp.si / 1000))) - 4.50) * 100;
+      percentualGordura = (4.95 / (1.1567 - 0.0717 * log(10) * ((comp.triceps) + (comp.biceps) + (comp.se) + (comp.si))) - 4.50) * 100;
     }
 
     return percentualGordura;
