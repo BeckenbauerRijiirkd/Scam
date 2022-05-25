@@ -18,9 +18,10 @@ class Comp_Corp_Result extends StatelessWidget {
     //pg
     //[(4,95 / Densidade corporal) – 4,50] x 100
 
-    double dc = 1.1567 - 0.0717 * log(12 + 6 + 21 + 15);
+    double dc = 1.1567 - 0.0717 * log(54);
 
     print(dc);
+    print("==========");
 
     if (comp.genero == 0) {
       //Masculino
