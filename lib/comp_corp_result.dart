@@ -59,7 +59,7 @@ class Comp_Corp_Result extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                Container(child: Text("Composição Corporal")),
+                Container(child: Text("Percentual Gordura")),
                 Container(
                   height: 60,
                   alignment: Alignment.center,
