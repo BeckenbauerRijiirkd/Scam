@@ -66,7 +66,7 @@ class Home extends StatelessWidget {
                     child: Row(crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
                       FlatButton(
                         child: Text(
-                          "COMP. COMRPORAL",
+                          "COMP. CORPORAL",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
