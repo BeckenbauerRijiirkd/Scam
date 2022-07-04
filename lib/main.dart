@@ -1,25 +1,27 @@
+import 'services/auth_service.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:provider/provider.dart';
+import 'meu_aplicativo.dart';
 
-import 'imc_page.dart';
-import 'login_page.dart';
-import 'home.dart';
+import 'package:scam.com/configs/app_settings.dart';
+import 'package:scam.com/services/auth_service.dart';
+import 'firebase_options.dart';
 
-import 'rec_pass.dart';
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-void main() => runApp(MyApp());
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Login(),
-    );
-  }
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => AuthService()),
+        ChangeNotifierProvider(create: (context) => AppSettings()),
+      ],
+      child: MeuAplicativo(),
+    ),
+  );
 }

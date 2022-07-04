@@ -18,12 +18,17 @@ class Comp_Corp_Result extends StatelessWidget {
     //pg
     //[(4,95 / Densidade corporal) – 4,50] x 100
 
+    double dc = 1.1567 - 0.0717 * log((comp.triceps) + (comp.biceps) + (comp.se) + (comp.si)) / ln10;
+
+    print(dc);
+    print("==========");
+
     if (comp.genero == 0) {
       //Masculino
-      percentualGordura = (4.95 / (1.1765 - 0.0744 * log(10) * ((comp.triceps / 100) + (comp.biceps / 100) + (comp.se / 100) + (comp.si / 100))) - 4.50) * 100;
+      percentualGordura = (4.95 / (1.1765 - 0.0744 * log((comp.triceps) + (comp.biceps) + (comp.se) + (comp.si)) / ln10) - 4.50) * 100;
     } else {
       //Feminino
-      percentualGordura = (4.95 / (1.1567 - 0.0717 * log(10) * ((comp.triceps / 100) + (comp.biceps / 100) + (comp.se / 100) + (comp.si / 100))) - 4.50) * 100;
+      percentualGordura = (4.95 / (1.1567 - 0.0717 * log((comp.triceps) + (comp.biceps) + (comp.se) + (comp.si)) / ln10) - 4.50) * 100;
     }
 
     return percentualGordura;
@@ -54,23 +59,12 @@ class Comp_Corp_Result extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                Container(child: Text("Composição Corporal")),
+                Container(child: Text("Percentual Gordura")),
                 Container(
                   height: 60,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      stops: [
-                        0.3,
-                        1
-                      ],
-                      colors: [
-                        Color(0xFF2494F5),
-                        Color(0xFF095A9D),
-                      ],
-                    ),
+                    color: Colors.blue,
                     borderRadius: BorderRadius.all(
                       Radius.circular(5),
                     ),
@@ -97,18 +91,7 @@ class Comp_Corp_Result extends StatelessWidget {
                   height: 60,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      stops: [
-                        0.3,
-                        1
-                      ],
-                      colors: [
-                        Color(0xFF2494F5),
-                        Color(0xFF095A9D),
-                      ],
-                    ),
+                    color: Colors.blue,
                     borderRadius: BorderRadius.all(
                       Radius.circular(5),
                     ),
@@ -135,18 +118,7 @@ class Comp_Corp_Result extends StatelessWidget {
                   height: 60,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      stops: [
-                        0.3,
-                        1
-                      ],
-                      colors: [
-                        Color(0xFF2494F5),
-                        Color(0xFF095A9D),
-                      ],
-                    ),
+                    color: Colors.blue,
                     borderRadius: BorderRadius.all(
                       Radius.circular(5),
                     ),

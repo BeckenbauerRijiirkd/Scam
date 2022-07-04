@@ -3,6 +3,9 @@ import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 import 'imc_page.dart';
 import 'comp_corporal.dart';
+import 'package:scam.com/services/auth_service.dart';
+
+import 'package:provider/provider.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -24,18 +27,7 @@ class Home extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      stops: [
-                        0.3,
-                        1
-                      ],
-                      colors: [
-                        Color(0xFF2494F5),
-                        Color(0xFF095A9D),
-                      ],
-                    ),
+                    color: Colors.blue,
                     borderRadius: BorderRadius.all(
                       Radius.circular(5),
                     ),
@@ -62,33 +54,19 @@ class Home extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  height: 60,
-                  margin: EdgeInsets.all(10),
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      stops: [
-                        0.3,
-                        1
-                      ],
-                      colors: [
-                        Color(0xFF2494F5),
-                        Color(0xFF095A9D),
-                      ],
+                    height: 60,
+                    margin: EdgeInsets.all(10),
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(5),
+                      ),
                     ),
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(5),
-                    ),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
+                    child: Row(crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
                       FlatButton(
                         child: Text(
-                          "COMP. COMRPORAL",
+                          "COMP. CORPORAL",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
@@ -99,10 +77,29 @@ class Home extends StatelessWidget {
                         onPressed: () {
                           Navigator.of(context).push(MaterialPageRoute(builder: (context) => Comp_Corporal_Page()));
                         },
-                      ),
-                    ],
+                      )
+                    ])),
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: 24),
+                  child: OutlinedButton(
+                    onPressed: () => context.read<AuthService>().logout(),
+                    style: OutlinedButton.styleFrom(
+                      primary: Colors.red,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.all(16.0),
+                          child: Text(
+                            'Sair',
+                            style: TextStyle(fontSize: 18),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
+                )
               ],
             )));
   }
